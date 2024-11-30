@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body, .nav__list {
+    margin: 0;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+nav {
+    border-bottom: solid 2px;
+    background-color: #48e;
+    padding: 30px 20px;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.nav__item {
+    list-style: none;
+}
+
+
+.nav__item:hover:not(.nav__item:last-child) {
+    text-decoration: underline red;
+}
+
+.nav__button-form {
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
