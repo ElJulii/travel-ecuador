@@ -9,7 +9,7 @@ body, .nav__list {
 a, button {
     cursor: pointer;
 }
-
+/*nav part*/
 nav {
     border-bottom: solid 2px;
     background-color: #48e;
@@ -36,7 +36,27 @@ nav {
     padding: 5px 15px;
     border-radius: 5px;
 }
+/*End nav part*/
 
+/*main section one*/
+main {
+    text-align: center;
+}
+
+.section-one__photo-profile {
+    margin: auto;
+    background-image: url('/images-folder/yo.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 350px;
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+/*End main section one*/
 a {
     text-decoration: none;
 }
