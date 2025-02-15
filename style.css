@@ -85,6 +85,10 @@ button, .menu--open__label--check-box, .list__item {
         background: url('images-folder/bc-header/back-mobile.jpg') center / cover fixed no-repeat;
     }
 
+    .header__text, span {
+        text-shadow: 10px 1px 10px black;
+    }
+
     .header__text-tittle {
         font-size: 5em;
         letter-spacing: 8px;
@@ -126,6 +130,7 @@ button, .menu--open__label--check-box, .list__item {
 /*Computer Size*/
 
 @media screen and (min-width: 650px) {
+    /*Nav*/
     .nav {
         gap: 5%;
     }
@@ -140,5 +145,21 @@ button, .menu--open__label--check-box, .list__item {
         justify-content: space-evenly;
         position: initial;
         height: auto;
+    }
+    /*Header*/
+    .main__header {
+        background-image: url('images-folder/bc-header/back-pc-one.webp');
+    }
+
+    .header__text-tittle {
+        font-size: 7.5rem;
+    }
+
+    .header__text-introduction {
+        font-size: 2rem;
+    }
+
+    .header__link-information {
+        font-size: 1.7em;
     }
 }
