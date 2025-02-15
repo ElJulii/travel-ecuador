@@ -21,7 +21,8 @@ button, .menu--open__label--check-box, .list__item {
     align-items: center;
     border-bottom: solid 2px black;
     padding: 10px 0;
-    
+    container-type: inline-size;
+    container-name: nav_container;
 }
 
 .nav__logo--business {
@@ -35,7 +36,7 @@ button, .menu--open__label--check-box, .list__item {
 .nav__title {
     font-size: 1.5em;
     font-family: cursive sans-serif;
-    text-shadow: 4px 2px 5px black;
+    text-shadow: 2px 2px 5px black;
 }
 
 .nav__list, .menu--open__input--check-box {
@@ -74,6 +75,13 @@ button, .menu--open__label--check-box, .list__item {
 
 .menu--open__input--check-box:checked ~ .nav__list {
     display: flex;
+}
+
+    /*Nav container*/
+@container nav_container (min-width: 1030px) {
+    .nav__logo--business {
+        background-size: 60%;
+    }
 }
 
 /*Nav End*/
