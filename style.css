@@ -4,11 +4,27 @@
     padding: 0;
 }
 
-/*Header*/
+button {
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button, .menu--open__label--check-box, .list__item {
+    cursor: pointer;
+} 
+
+/*Nav*/
 
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    border-bottom: solid 2px black;
+    padding: 20px 0;
+}
+
+.nav__logo--business {
+    margin-left: 20px;
 }
 
 .nav__list, .menu--open__input--check-box {
@@ -31,10 +47,13 @@
     font-size: 1.6em;
 }
 
+.item-list__button-contact {
+    padding: 5px 20px;
+}
+
 .menu--open__label--check-box {
     position: relative;
     right: 20px;
-    cursor: pointer;
     font-size: 3em;
     font-weight: 800;
     z-index: 2;
@@ -45,4 +64,24 @@
     display: flex;
 }
 
-/*Header End*/
+/*Nav End*/
+
+/*Computer Size*/
+
+@media screen and (min-width: 650px) {
+    .nav {
+        gap: 5%;
+    }
+
+    .menu--open__label--check-box {
+        display: none;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: initial;
+        height: auto;
+    }
+}
