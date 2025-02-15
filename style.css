@@ -141,6 +141,55 @@ button, .menu--open__label--check-box, .list__item {
 
 /*End Main Header*/
 
+/*section about*/
+
+    .main__section-about {
+        padding: 20px;
+    }
+
+    .main__section-about p, .main__section-about li, .main__section-about a {
+        font-size: 1.5rem;
+    }
+
+    .section-about__box-introduction {
+        text-align: center;
+    }
+
+    .section-about__box-introduction h2 {
+        font-size: 2.5em;
+    }
+
+    .box-introduction__presentation-card, .box-about-text__main-text, .box-about-text__list {
+        margin-bottom: 20px;
+    }
+
+    .link-destinies {
+        text-decoration: none;
+        color: #111;
+    }
+
+    .link-destinies:hover {
+        text-decoration: underline;
+        color: red;
+    }
+
+    .box-about-text__list {
+        padding-left: 20px;
+    }
+
+    .section-about__map-ec {
+        margin: 20px auto;
+        border: solid 2px black;
+        border-radius: 20px;
+        width: 300px;
+        height: 300px;
+        background: 
+        url('images-folder/ec-ub/localizacion-geografica-de-ecuador.jpg') center / cover;
+    }
+
+
+/*End section about*/
+
 /*Computer Size*/
 
 @media screen and (min-width: 650px) {
