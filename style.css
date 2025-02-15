@@ -18,13 +18,18 @@ button, .menu--open__label--check-box, .list__item {
 .nav {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     border-bottom: solid 2px black;
-    padding: 20px 0;
+    padding: 10px 0;
+    
 }
 
 .nav__logo--business {
+    border: solid 2px transparent;
+    width: 10%;
+    height: 70px;
     margin-left: 20px;
+    background: url('images-folder/logo/logo-travel.webp') center / cover no-repeat;
 }
 
 .nav__list, .menu--open__input--check-box {
