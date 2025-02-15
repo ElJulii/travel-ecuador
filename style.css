@@ -229,4 +229,26 @@ button, .menu--open__label--check-box, .list__item {
     .header__link-information {
         font-size: 1.7em;
     }
+    /*Section about*/
+    .main__section-about {
+        padding: 0;
+        margin: 30px;
+        border: solid 2px black;
+        display: grid;
+        grid-template-columns: 30vw 1fr;
+        grid-template-rows: repeat(3, auto);
+        column-gap: 30px;
+    }
+
+    .section-about__box-introduction {
+        grid-column: 1/span 2;
+        border-bottom: solid 2px black;
+    }
+
+    .section-about__box-about-text {
+        grid-row: 2/span 2;
+        border-right: solid 2px black;
+        padding: 20px;
+    }
+
 }
