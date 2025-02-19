@@ -195,6 +195,36 @@ button, .menu--open__label--check-box, .list__item {
 
 /*Section Services*/
 
+.main__section-packages {
+    font-size: 1.2rem;
+    padding: 20px;
+    gap: 30px;
+}
+
+.main__section-packages, .pack-box__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.pack-box__content ul {
+    display: flex;
+}
+
+.pack-box__content ul li {
+    list-style-type: none;
+}
+
+.pack-box__content {
+    gap: 15px;
+}
+
+.pack-box__img {
+    margin: 10px auto;
+    border: solid 2px black;
+    width: 300px;
+    height: 300px;
+}
+
 /*End Section Services*/
 
 /*Computer Size*/
