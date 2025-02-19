@@ -23,6 +23,9 @@ button, .menu--open__label--check-box, .list__item {
     padding: 10px 0;
     container-type: inline-size;
     container-name: nav_container;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
 }
 
 .nav__logo--business {
@@ -189,6 +192,10 @@ button, .menu--open__label--check-box, .list__item {
 
 
 /*End section about*/
+
+/*Section Services*/
+
+/*End Section Services*/
 
 /*Computer Size*/
 
