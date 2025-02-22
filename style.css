@@ -252,6 +252,102 @@ button, .menu--open__label--check-box, .list__item {
 
 /*End Section Services*/
 
+/*Form Contact Section*/
+
+
+
+/*End Form Contact Section*/
+.section--form-container__form {
+    margin: 40px auto;
+    padding: 25px;
+    width: auto;
+    max-width: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.section--form-container__form h2 {
+    text-align: center;
+}
+
+.section--form-container__form button {
+    margin-top: 20px;
+    align-self: center;
+    width: 30%;
+    min-width: 100px;
+    max-width: 150px;
+    padding: 3px 0;
+}
+
+#name {
+    margin-bottom: 10px;
+}
+
+.section--form-container__form input {
+    outline: none;
+    border: none;
+    border-bottom: solid 2px black;
+}
+/*Footer*/
+
+.footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer .footer-container div {
+    margin: 10px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+    color: #f1c40f;
+}
+
+.footer p, a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-media img {
+    width: 30px;
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 12px;
+    border-top: 1px solid #777;
+    padding-top: 10px;
+}
+
+
+/*End Footer*/
+
 /*Computer Size*/
 
 @media screen and (min-width: 650px) {
