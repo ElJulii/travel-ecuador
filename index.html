@@ -13,12 +13,22 @@
         <label class="menu--open__label--check-box" for="menu--open__input--check-box">=</label>
         <input class="menu--open__input--check-box" id="menu--open__input--check-box" type="checkbox">
         <ul class="nav__list">
-            <li class="list__item">Galapagos</li>
-            <li class="list__item">Andes</li>
-            <li class="list__item">Coast</li>
-            <li class="list__item">Jungle</li>
             <li class="list__item">
-                <button class="item-list__button-contact">Contact</button>
+                <a href="#galapagos">Galapagos</a>
+            </li>
+            <li class="list__item">
+                <a href="#andes">Andes</a>
+            </li>
+            <li class="list__item">
+                <a href="#coast">Coast</a>
+            </li>
+            <li class="list__item">
+                <a href="#jungle">Jungle</a>
+            </li>
+            <li class="list__item">
+                <a href="#contact" class="item-list__button-contact" >
+                    Contact
+                </a>
             </li>
         </ul>
     </nav>
@@ -28,10 +38,10 @@
             <h1 class="header__text-tittle header__text">
                 <span class="text-title__ecu header__text">ECU</span><span class="text-title__ad">AD</span><span class="text-title__or">OR</span>
             </h1>
-            <a class="header__link-information" href="#">More Information</a>
+            <a class="header__link-information" href="#about">More Information</a>
         </header>
         <!-- About section -->
-        <section class="main__section-about">
+        <section id="about" class="main__section-about">
             <div class="section-about__box-introduction">
                 <h2 class="box-introduction__title">About us</h2>
                 <h3 class="box-introduction__presentation-card">
@@ -55,7 +65,7 @@
                     <li class="list__item-packet">Transport to the airport 🚌 </li>
                     <li class="list__item-packet">Guides of all the languages 🙋</li>
                 </ul>
-                <a class="box-about-text__main-text link-destinies" href="#">
+                <a class="box-about-text__main-text link-destinies" href="#galapagos">
                     What are you waiting for? See our destinies!
                 </a>
             </div>
@@ -77,151 +87,156 @@
         </section>
 
         <!-- Services section -->
-        <section class="main__section-packages">
-            <div class="section-packages__pack-box">
-                <div class="pack-box__content">
-                    <h2>Galapagos Islands</h2>
-                    <h3>$1499 x person / 5 days and 4 nights</h3>
-                    <p>This volcanic archipelago is located in the Pacific Ocean.
-                        It is known as one of the most famous places of the world 
-                        for wildlife viewing. Its beautiful white beaches and the
-                        company of Giant turtles and more magnific unique animal
-                        species, will make your stay unforgettable.
-                    </p>
-                    <ul>
-                        <li><b>Day 1: </b>Island Cruz - Beach and 'Las Grietas' visit</li>
-                        <li><b>Day 2: </b>Island Cruz - Excursion by 'Tortuga bay'</li>
-                        <li><b>Day 3: </b>Island Cruz - Excursion by Darwin reservation</li>
-                        <li><b>Day 4: </b>Island Isabela - Excursion by the biggest island 'Isabela' and snorkeling with sharks</li>
-                        <li><b>Day 5: </b>Island Cruz - Excursion by volcanic caves</li>
-                    </ul>
+        <div>
+            <section class="main__section-packages">
+                <div class="section-packages__pack-box">
+                    <div class="pack-box__content">
+                        <h2 id="galapagos">Galapagos Islands</h2>
+                        <h3>$1499 x person / 5 days and 4 nights</h3>
+                        <p>This volcanic archipelago is located in the Pacific Ocean.
+                            It is known as one of the most famous places of the world 
+                            for wildlife viewing. Its beautiful white beaches and the
+                            company of Giant turtles and more magnific unique animal
+                            species, will make your stay unforgettable.
+                        </p>
+                        <ul>
+                            <li><b>Day 1: </b>Island Cruz - Beach and 'Las Grietas' visit</li>
+                            <li><b>Day 2: </b>Island Cruz - Excursion by 'Tortuga bay'</li>
+                            <li><b>Day 3: </b>Island Cruz - Excursion by Darwin reservation</li>
+                            <li><b>Day 4: </b>Island Isabela - Excursion by the biggest island 'Isabela' and snorkeling with sharks</li>
+                            <li><b>Day 5: </b>Island Cruz - Excursion by volcanic caves</li>
+                        </ul>
+                    </div>
+                    <div class="pack-box__img img-galapagos"></div>
                 </div>
-                <div class="pack-box__img"></div>
-            </div>
-            <hr>
-            <div class="section-packages__pack-box">
-                <div class="pack-box__content">
-                    <h2>Quito</h2>
-                    <h3>$1199 x person / 4 days and 3 nights</h3>
-                    <p>Quito, the capital of Ecuador, is located high on the slopes 
-                        of the Andes at 2,850 m. It was built on the foundations of an 
-                        ancient Inca city and is famous for its well-preserved colonial 
-                        center, with several churches from the 16th and 17th centuries.
-                    </p>
-                    <ul>
-                        <li><b>Day 1: </b>Visit the monument of the Half of the World</li>
-                        <li><b>Day 2: </b>Visit the historical city centre (Panecillo status, Presidential Palace, La Ronda street)</li>
-                        <li><b>Day 3: </b>Volcano Amusement Park and 'The teleferico'</li>
-                        <li><b>Day 4: </b>Visit to the church 'San Francisco de Quito'</li>
-                    </ul>
+                <hr>
+                <div class="section-packages__pack-box">
+                    <div class="pack-box__content">
+                        <h2 id="andes">Quito (capital)</h2>
+                        <h3>$1199 x person / 4 days and 3 nights</h3>
+                        <p>Quito, the capital of Ecuador, is located high on the slopes 
+                            of the Andes at 2,850 m. It was built on the foundations of an 
+                            ancient Inca city and is famous for its well-preserved colonial 
+                            center, with several churches from the 16th and 17th centuries.
+                        </p>
+                        <ul>
+                            <li><b>Day 1: </b>Visit the monument of the Half of the World</li>
+                            <li><b>Day 2: </b>Visit the historical city centre (Panecillo status, Presidential Palace, La Ronda street)</li>
+                            <li><b>Day 3: </b>Volcano Amusement Park and 'The teleferico'</li>
+                            <li><b>Day 4: </b>Visit to the church 'San Francisco de Quito'</li>
+                        </ul>
+                    </div>
+                    <div class="pack-box__img img-quito"></div>
                 </div>
-                <div class="pack-box__img"></div>
-            </div>
-            <hr>
-            <div class="section-packages__pack-box">
-                <div class="pack-box__content">
-                    <h2>Cuenca</h2>
-                    <h3>$899 x person / 3 days and 2 nights</h3>
-                    <p>Cuenca is a city rooted in the mountains of the central-eastern 
-                        area of ​​Spain. Originally founded by the Arabs, it still preserves
-                        the historic walled area, with its steep cobblestone streets and its 
-                        ruins of medieval castles.</p>
-                    <ul>
-                        <li><b>Day 1: </b>Catedral de la Inmaculada Concepción de Cuenca</li>
-                        <li><b>Day 2: </b>Parque Nacional Cajas</li>
-                        <li><b>Day 3: </b>Turi viewpoint</li>
-                    </ul>
+                <hr>
+                <div class="section-packages__pack-box">
+                    <div class="pack-box__content">
+                        <h2>Cuenca</h2>
+                        <h3>$899 x person / 3 days and 2 nights</h3>
+                        <p>Cuenca is a city rooted in the mountains of the central-eastern 
+                            area of ​​Spain. Originally founded by the Arabs, it still preserves
+                            the historic walled area, with its steep cobblestone streets and its 
+                            ruins of medieval castles.</p>
+                        <ul>
+                            <li><b>Day 1: </b>Catedral de la Inmaculada Concepción de Cuenca</li>
+                            <li><b>Day 2: </b>Parque Nacional Cajas</li>
+                            <li><b>Day 3: </b>Turi viewpoint</li>
+                        </ul>
+                    </div>
+                    <div class="pack-box__img img-cuenca"></div>
                 </div>
-                <div class="pack-box__img"></div>
-            </div>
-            <hr>
-            <div class="section-packages__pack-box">
-                <div class="pack-box__content">
-                    <h2>Tungurahua province</h2> 
-                    <h3>$999 x person / 4 days and 3 nights</h3>
-                    <p>Tungurahua is one of the twenty-four provinces that make up the Republic of 
-                        Ecuador, located in the center of the country, in the geographical area 
-                        known as the inter-Andean region or mountain range, mainly on the Patate 
-                        basin.
-                    </p>
-                    <ul>
-                        <li><b>Day 1: </b>Tree house / Animal Park</li>
-                        <li><b>Day 2: </b>Waterfall 'Pailon del Diablo'</li>
-                        <li><b>Day 3: </b>Waterfall Route</li>
-                        <li><b>Day 4: </b>Magic village</li>
-                    </ul>
+                <hr>
+                <div class="section-packages__pack-box">
+                    <div class="pack-box__content">
+                        <h2>Tungurahua province</h2> 
+                        <h3>$999 x person / 4 days and 3 nights</h3>
+                        <p>Tungurahua is one of the twenty-four provinces that make up the Republic of 
+                            Ecuador, located in the center of the country, in the geographical area 
+                            known as the inter-Andean region or mountain range, mainly on the Patate 
+                            basin.
+                        </p>
+                        <ul>
+                            <li><b>Day 1: </b>Tree house / Animal Park</li>
+                            <li><b>Day 2: </b>Waterfall 'Pailon del Diablo'</li>
+                            <li><b>Day 3: </b>Waterfall Route</li>
+                            <li><b>Day 4: </b>Magic village</li>
+                        </ul>
+                    </div>
+                    <div class="pack-box__img img-tungu"></div>
                 </div>
-                <div class="pack-box__img"></div>
-            </div>
-            <hr>
-            <div class="section-packages__pack-box">
-                <div class="pack-box__content">
-                    <h2>Guayaquil</h2>
-                    <h3>$1299 x person / 4 days and 3 nights</h3>
-                    <p>Guayaquil, a port city in Ecuador, is a gateway to the beaches of the 
-                        Pacific and the Galapagos Islands. The Simón Bolívar boardwalk extends
-                        along the Guayas River with its Rotunda Hemicycle. To the north is the 
-                        neighborhood of Las Peñas, full of colorful houses. Santa Ana Hill, 
-                        reached by stairs lined with cafes and art galleries, offers views of 
-                        the city and is home to the Santa Ana Chapel and a lighthouse.</p>
-                    <ul>
-                        <li><b>Day 1: </b>Malecón 2000 / Historic park Guayaquil</li>
-                        <li><b>Day 2: </b>'Las peñas' / Cerro Santa Ana</li>
-                        <li><b>Day 3: </b>'La rotonda' statue / Santa Ana port</li>
-                        <li><b>Day 4: </b>Iguana Park and beach excursion</li>
-                    </ul>
+                <hr>
+                <div class="section-packages__pack-box">
+                    <div class="pack-box__content">
+                        <h2 id="coast">Guayaquil</h2>
+                        <h3>$1299 x person / 4 days and 3 nights</h3>
+                        <p>Guayaquil, a port city in Ecuador, is a gateway to the beaches of the 
+                            Pacific and the Galapagos Islands. The Simón Bolívar boardwalk extends
+                            along the Guayas River with its Rotunda Hemicycle. To the north is the 
+                            neighborhood of Las Peñas, full of colorful houses. Santa Ana Hill, 
+                            reached by stairs lined with cafes and art galleries, offers views of 
+                            the city and is home to the Santa Ana Chapel and a lighthouse.</p>
+                        <ul>
+                            <li><b>Day 1: </b>Malecón 2000 / Historic park Guayaquil</li>
+                            <li><b>Day 2: </b>'Las peñas' / Cerro Santa Ana</li>
+                            <li><b>Day 3: </b>'La rotonda' statue / Santa Ana port</li>
+                            <li><b>Day 4: </b>Iguana Park and beach excursion</li>
+                        </ul>
+                    </div>
+                    <div class="pack-box__img img-guaya"></div>
                 </div>
-                <div class="pack-box__img"></div>
-            </div>
-            <hr>
-            <div class="section-packages__pack-box">
-                <div class="pack-box__content">
-                    <h2>Manabí Province</h2>
-                    <h3>$499 x person / 3 days and 2 nights</h3>
-                    <p>Manabí is one of the twenty-four provinces that make up the Republic 
-                        of Ecuador, located in the west of the country, in the geographical
-                        area known as the coastal region or Coast. Its administrative
-                        capital is the city of Portoviejo.
-                    </p>
-                    <ul>
-                        <li><b>Day 1: </b>Beach 'Santa Marianita'</li>
-                        <li><b>Day 2: </b>Island 'La Plata'</li>
-                        <li><b>Day 3: </b>Bat beach</li>
-                    </ul>
+                <hr>
+                <div class="section-packages__pack-box">
+                    <div class="pack-box__content">
+                        <h2>Manabí Province</h2>
+                        <h3>$499 x person / 3 days and 2 nights</h3>
+                        <p>Manabí is one of the twenty-four provinces that make up the Republic 
+                            of Ecuador, located in the west of the country, in the geographical
+                            area known as the coastal region or Coast. Its administrative
+                            capital is the city of Portoviejo.
+                        </p>
+                        <ul>
+                            <li><b>Day 1: </b>Beach 'Santa Marianita'</li>
+                            <li><b>Day 2: </b>Island 'La Plata'</li>
+                            <li><b>Day 3: </b>Bat beach</li>
+                        </ul>
+                    </div>
+                    <div class="pack-box__img img-manabi"></div>
+                    
                 </div>
-                <div class="pack-box__img"></div>
-                
-            </div>
-            <hr>
-            <div class="section-packages__pack-box">
-                <div class="pack-box__content">
-                    <h2>Napo province</h2>  
-                    <h3>1799 x person / 4 days and 3 nights</h3>
-                    <p>Napo is one of the twenty-four provinces that make 
-                        up the Republic of Ecuador, located in the north-central 
-                        part of the country, in the geographical area known as
-                        the Amazon region, mainly on the external flanks of the
-                        western mountain range in the north and west, and the 
-                        extensive Amazon plain to the south.
-                    </p>
-                    <ul>
-                        <li><b>Day 1: </b>'Amazoonico' Animal Rescue Centre / Caverns 'Jumandy'</li>
-                        <li><b>Day 2: </b>'Anstisana' Ecologic Reserve</li>
-                        <li><b>Day 3: </b>'Alto Coca' Reserve</li>
-                        <li><b>Day 4: </b>'Latas' Waterfalls</li>
-                    </ul>
+                <hr>
+                <div class="section-packages__pack-box">
+                    <div class="pack-box__content">
+                        <h2 id="jungle">Napo province</h2>  
+                        <h3>1799 x person / 4 days and 3 nights</h3>
+                        <p>Napo is one of the twenty-four provinces that make 
+                            up the Republic of Ecuador, located in the north-central 
+                            part of the country, in the geographical area known as
+                            the Amazon region, mainly on the external flanks of the
+                            western mountain range in the north and west, and the 
+                            extensive Amazon plain to the south.
+                        </p>
+                        <ul>
+                            <li><b>Day 1: </b>'Amazoonico' Animal Rescue Centre / Caverns 'Jumandy'</li>
+                            <li><b>Day 2: </b>'Anstisana' Ecologic Reserve</li>
+                            <li><b>Day 3: </b>'Alto Coca' Reserve</li>
+                            <li><b>Day 4: </b>'Latas' Waterfalls</li>
+                        </ul>
+                    </div>
+                    <div class="pack-box__img img-napo"></div>
                 </div>
-                <div class="pack-box__img"></div>
-            </div>
-        </section>
+            </section>
+        </div>
+        
+        <!-- Section of form -->
+
         <section class="main__section--form-container">
-            <form action="" class="section--form-container__form">
+            <form id="contact" action="" class="section--form-container__form">
                 <h2>We contact you</h2>
                 <label for="name">Name: </label>
                 <input id="name" type="text" placeholder="Write your beautiful name"> 
                 <label for="phone">Cellphone: </label>
                 <input id="phone" type="text" placeholder="Could you give your phone number?">
-                <button class="form__button">SEND</button>
+                <button class="form__button">Send</button>
             </form>
         </section>
     </main>

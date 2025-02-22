@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    --principal-color: #f00;
+    --second-color: #fff;
+    --third-color: #8294aa;
+    background-color: var(--second-color);
+}
+
 button {
     border-radius: 7px;
     cursor: pointer;
@@ -19,13 +27,13 @@ button, .menu--open__label--check-box, .list__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px var(--second-color);
     padding: 10px 0;
     container-type: inline-size;
     container-name: nav_container;
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: var(--principal-color);
 }
 
 .nav__logo--business {
@@ -40,6 +48,7 @@ button, .menu--open__label--check-box, .list__item {
     font-size: 1.5em;
     font-family: cursive sans-serif;
     text-shadow: 2px 2px 5px black;
+    color: var(--second-color);
 }
 
 .nav__list, .menu--open__input--check-box {
@@ -55,12 +64,23 @@ button, .menu--open__label--check-box, .list__item {
     gap: 60px;
     justify-content: center;
     align-items: center;
+    opacity: 97%;
+    background-color: var(--principal-color);
 }
 
 .list__item {
     list-style: none;
     text-align: center;
     font-size: 1.6em;
+}
+
+.list__item a {
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+.list__item:hover,  .item-list__button-contact:hover{
+    font-weight: 600;
 }
 
 .item-list__button-contact {
@@ -73,6 +93,7 @@ button, .menu--open__label--check-box, .list__item {
     font-size: 3em;
     font-weight: 800;
     z-index: 2;
+    color: var(--second-color);
 }
 
 
@@ -148,6 +169,8 @@ button, .menu--open__label--check-box, .list__item {
 
     .main__section-about {
         padding: 20px;
+        background-color: var(--third-color);
+        color: var(--second-color);
     }
 
     .main__section-about p, .main__section-about li, .main__section-about a {
@@ -168,12 +191,12 @@ button, .menu--open__label--check-box, .list__item {
 
     .link-destinies {
         text-decoration: none;
-        color: #111;
+        color: var(--second-color);
     }
 
     .link-destinies:hover {
         text-decoration: underline;
-        color: red;
+        color: var(--principal-color);
     }
 
     .box-about-text__list {
@@ -221,6 +244,8 @@ button, .menu--open__label--check-box, .list__item {
     flex-shrink: 100px;  
     max-width: 150px;
     border: solid 1px black;
+    background-color: var(--principal-color);
+    color: var(--second-color);
 }
 
 .pack-box__content {
@@ -234,6 +259,33 @@ button, .menu--open__label--check-box, .list__item {
     height: 300px;
 }
 
+.img-galapagos {
+    background: url('images-folder/destinies/galapagos/ph-gala.jpg') center / cover no-repeat;
+}
+
+.img-quito {
+    background: url('images-folder/destinies/andes/ph-quito.jpg') center / cover no-repeat;
+}
+
+.img-cuenca {
+    background: url('images-folder/destinies/andes/ph-cuenca.jpg') center / cover no-repeat;
+}
+
+.img-tungu {
+    background: url('images-folder/destinies/andes/ph-tungu.jpg') center / cover no-repeat;
+}
+
+.img-guaya {
+    background: url('images-folder/destinies/coast/ph-guaya.jpg_alt=media') center / cover no-repeat;
+}
+
+.img-manabi {
+    background: url('images-folder/destinies/coast/ph-manabi.webp') center / cover no-repeat;
+}
+
+.img-napo {
+    background: url('images-folder/destinies/jungle/ph-napo.webp') center / cover no-repeat;
+}
 @container section_packages (min-width: 1004px) {
     .section-packages__pack-box {
         display: flex;
@@ -254,11 +306,9 @@ button, .menu--open__label--check-box, .list__item {
 
 /*Form Contact Section*/
 
-
-
-/*End Form Contact Section*/
 .section--form-container__form {
-    margin: 40px auto;
+    color: var(--second-color);
+    margin: 100px auto;
     padding: 25px;
     width: auto;
     max-width: 400px;
@@ -267,6 +317,8 @@ button, .menu--open__label--check-box, .list__item {
     gap: 5px;
     border: solid 2px black;
     border-radius: 10px;
+    background-color: var(--principal-color);
+    box-shadow: 0 0 20px black;
 }
 
 .section--form-container__form h2 {
@@ -280,17 +332,36 @@ button, .menu--open__label--check-box, .list__item {
     min-width: 100px;
     max-width: 150px;
     padding: 3px 0;
+    background-color: var(--second-color);
+    color: var(--principal-color);
+    font-weight: 600;
+    transition: background-color 0.3s;
+    transition: color 0.3s;
+}
+
+.section--form-container__form button:hover {
+    background-color: #a00;
+    color: var(--second-color);
 }
 
 #name {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .section--form-container__form input {
     outline: none;
     border: none;
-    border-bottom: solid 2px black;
+    border-bottom: solid 2px var(--second-color);
+    background-color: transparent;
+    color: var(--second-color);
 }
+
+.section--form-container__form input::placeholder {
+    color: #ddd;
+}
+
+/*End Form Contact Section*/
+
 /*Footer*/
 
 .footer {
@@ -315,10 +386,10 @@ button, .menu--open__label--check-box, .list__item {
 
 .footer h3 {
     margin-bottom: 10px;
-    color: #f1c40f;
+    color: var(--principal-color);
 }
 
-.footer p, a {
+.footer p, .footer a {
     color: white;
     text-decoration: none;
     font-size: 14px;
@@ -371,6 +442,42 @@ button, .menu--open__label--check-box, .list__item {
         position: initial;
         height: auto;
     }
+
+    .item-list__button-contact {
+        border: solid 2px var(--second-color);
+        border-radius: 8px;
+        padding: 3px 15px;
+        background-color: var(--principal-color);
+        transition: background-color 0.3s;
+    }
+
+    .item-list__button-contact:hover {
+        background-color: #a00;
+    }
+
+    .list__item:not(.list__item:last-child) {
+        position: relative;
+    }
+
+    .list__item:hover,  .item-list__button-contact:hover {
+        font-weight: normal;
+    }
+
+    .list__item::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 0%;
+        height: 3%;
+        bottom: -3px;
+        background-color: var(--second-color);
+        transition: width 0.5s ease-in-out;
+    }
+
+    .list__item:hover:not(.list__item:last-child)::after {
+        width: 100%;
+    }
+
     /*Header*/
     .main__header {
         background-image: url('images-folder/bc-header/back-pc-one.webp');
@@ -409,4 +516,12 @@ button, .menu--open__label--check-box, .list__item {
         padding: 20px;
     }
 
+    .main > div {
+        margin: 30px auto;
+        padding: 20px;
+        width: 83%;
+        min-width: 600px;
+        border: solid 2px black;
+        background-color: #eee;
+    }
 }
