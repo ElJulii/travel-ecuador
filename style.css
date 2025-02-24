@@ -65,7 +65,7 @@ button, .menu--open__label--check-box, .list__item {
     gap: 60px;
     justify-content: center;
     align-items: center;
-    opacity: 97%;
+    opacity: 90%;
     background-color: var(--principal-color);
 }
 
@@ -129,7 +129,7 @@ button, .menu--open__label--check-box, .list__item {
     }
 
     .header__text-tittle {
-        font-size: 5em;
+        font-size: 4em;
         letter-spacing: 8px;
     }
 
@@ -162,6 +162,10 @@ button, .menu--open__label--check-box, .list__item {
     .header__link-information:hover {
         text-decoration: underline;
         color: yellow;
+    }
+
+    .header__text {
+        text-align: center;
     }
 
 /*End Main Header*/
@@ -250,6 +254,10 @@ button, .menu--open__label--check-box, .list__item {
     background-color: var(--principal-color);
     color: var(--second-color);
     height: fit-content;
+}
+
+li > b {
+    color: #333;
 }
 
 .pack-box__content {
