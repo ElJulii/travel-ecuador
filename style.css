@@ -9,6 +9,7 @@ body {
     --principal-color: #f00;
     --second-color: #fff;
     --third-color: #8294aa;
+    --border-radius: 20px; 
     background-color: var(--second-color);
 }
 
@@ -206,7 +207,7 @@ button, .menu--open__label--check-box, .list__item {
     .section-about__map-ec {
         margin: 20px auto;
         border: solid 2px black;
-        border-radius: 20px;
+        border-radius: var(--border-radius);
         width: 300px;
         height: 300px;
         background: 
@@ -234,6 +235,7 @@ button, .menu--open__label--check-box, .list__item {
 .pack-box__content ul {
     display: flex;
     justify-content: center;
+    align-items: last baseline;
     flex-wrap: wrap;
     gap: 15px 25px;
 }
@@ -242,10 +244,12 @@ button, .menu--open__label--check-box, .list__item {
     padding: 10px;
     list-style-type: none;
     flex-shrink: 100px;  
-    max-width: 150px;
+    max-width: 200px;
     border: solid 1px black;
+    border-radius: var(--border-radius);
     background-color: var(--principal-color);
     color: var(--second-color);
+    height: fit-content;
 }
 
 .pack-box__content {
@@ -257,6 +261,7 @@ button, .menu--open__label--check-box, .list__item {
     border: solid 2px black;
     width: 300px;
     height: 300px;
+    box-shadow: 0 0 20px black;
 }
 
 .img-galapagos {
@@ -471,7 +476,7 @@ button, .menu--open__label--check-box, .list__item {
         height: 3%;
         bottom: -3px;
         background-color: var(--second-color);
-        transition: width 0.5s ease-in-out;
+        transition: width 0.3s ease-in-out;
     }
 
     .list__item:hover:not(.list__item:last-child)::after {
