@@ -9,7 +9,7 @@ body {
     --principal-color: #f00;
     --second-color: #fff;
     --third-color: #8294aa;
-    --border-radius: 20px; 
+    --border-radius: 20px;
     background-color: var(--second-color);
 }
 
@@ -35,6 +35,7 @@ button, .menu--open__label--check-box, .list__item {
     position: sticky;
     top: 0;
     background-color: var(--principal-color);
+    z-index: 5;
 }
 
 .nav__logo--business {
@@ -53,7 +54,7 @@ button, .menu--open__label--check-box, .list__item {
 }
 
 .nav__list, .menu--open__input--check-box {
-    display: none;    
+    display: none;
 }
 
 .nav__list {
@@ -67,6 +68,7 @@ button, .menu--open__label--check-box, .list__item {
     align-items: center;
     opacity: 90%;
     background-color: var(--principal-color);
+    z-index: 10;
 }
 
 .list__item {
@@ -93,7 +95,7 @@ button, .menu--open__label--check-box, .list__item {
     right: 20px;
     font-size: 3em;
     font-weight: 800;
-    z-index: 2;
+    z-index: 20;
     color: var(--second-color);
 }
 
@@ -114,6 +116,8 @@ button, .menu--open__label--check-box, .list__item {
 /*Main Header*/
 
     .main__header {
+        margin-bottom: 5%;
+        border-bottom: solid 4px black;
         width: 100%;
         height: 90vh;
         display: flex;
@@ -126,6 +130,8 @@ button, .menu--open__label--check-box, .list__item {
 
     .header__text, span {
         text-shadow: 10px 1px 10px black;
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: black;
     }
 
     .header__text-tittle {
@@ -214,7 +220,7 @@ button, .menu--open__label--check-box, .list__item {
         border-radius: var(--border-radius);
         width: 300px;
         height: 300px;
-        background: 
+        background:
         url('images-folder/ec-ub/localizacion-geografica-de-ecuador.jpg') center / cover;
     }
 
@@ -247,7 +253,7 @@ button, .menu--open__label--check-box, .list__item {
 .pack-box__content ul li {
     padding: 10px;
     list-style-type: none;
-    flex-shrink: 100px;  
+    flex-shrink: 100px;
     max-width: 200px;
     border: solid 1px black;
     border-radius: var(--border-radius);
@@ -270,7 +276,14 @@ li > b {
     width: 300px;
     height: 300px;
     box-shadow: 0 0 20px black;
+    position: relative;
+    animation: img_box_animation linear;
+    animation-timeline: view();
+    animation-range: entry 2% cover 30%;
+    animation-fill-mode: both;
+    transition: background-size 5s;
 }
+
 
 .img-galapagos {
     background: url('images-folder/destinies/galapagos/ph-gala.jpg') center / cover no-repeat;
@@ -299,6 +312,32 @@ li > b {
 .img-napo {
     background: url('images-folder/destinies/jungle/ph-napo.webp') center / cover no-repeat;
 }
+
+.img-galapagos:hover, .img-quito:hover, .img-tungu:hover {
+    background-size: 110%;
+}
+
+.img-napo:hover, .img-cuenca:hover, .img-guaya:hover, .img-manabi:hover {
+    background-size: 150%;
+}
+
+
+@keyframes img_box_animation {
+    0% {
+        left: 10%;
+        opacity: 1%;
+    }
+
+    70% {
+        opacity: 2%;
+    }
+
+    100% {
+        left: 0;
+        opacity: 100%;
+    }
+}
+
 @container section_packages (min-width: 1004px) {
     .section-packages__pack-box {
         display: flex;
