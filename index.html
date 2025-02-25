@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JL Programmer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images-folder/logo/logo-travel.webp" type="img">
 </head>
 <body>
     <nav class="nav">
@@ -14,19 +15,19 @@
         <input class="menu--open__input--check-box" id="menu--open__input--check-box" type="checkbox">
         <ul class="nav__list">
             <li class="list__item">
-                <a href="#galapagos">Galapagos</a>
+                <a class="link-nav" href="#galapagos" onclick={close}>Galapagos</a>
             </li>
             <li class="list__item">
-                <a href="#andes">Andes</a>
+                <a class="link-nav" href="#andes">Andes</a>
             </li>
             <li class="list__item">
-                <a href="#coast">Coast</a>
+                <a class="link-nav" href="#coast">Coast</a>
             </li>
             <li class="list__item">
-                <a href="#jungle">Jungle</a>
+                <a class="link-nav" href="#jungle">Jungle</a>
             </li>
             <li class="list__item">
-                <a href="#contact" class="item-list__button-contact" >
+                <a href="#contact" class="item-list__button-contact link-nav" >
                     Contact
                 </a>
             </li>
@@ -268,4 +269,14 @@
     </footer>
     
 </body>
+<script>
+    const link_nav = document.querySelectorAll('.link-nav');
+    const checker = document.getElementById('menu--open__input--check-box');
+
+    link_nav.forEach(link => {
+        link.addEventListener('click', function(event) {
+            checker.checked = false;
+        })
+    })
+</script>
 </html>

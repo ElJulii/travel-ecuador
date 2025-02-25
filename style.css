@@ -281,7 +281,6 @@ li > b {
     animation-timeline: view();
     animation-range: entry 2% cover 30%;
     animation-fill-mode: both;
-    transition: background-size 5s;
 }
 
 
@@ -311,14 +310,6 @@ li > b {
 
 .img-napo {
     background: url('images-folder/destinies/jungle/ph-napo.webp') center / cover no-repeat;
-}
-
-.img-galapagos:hover, .img-quito:hover, .img-tungu:hover {
-    background-size: 110%;
-}
-
-.img-napo:hover, .img-cuenca:hover, .img-guaya:hover, .img-manabi:hover {
-    background-size: 150%;
 }
 
 
