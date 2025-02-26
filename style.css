@@ -387,7 +387,11 @@ li > b {
     color: var(--second-color);
 }
 
-#name {
+.form__label-email {
+    margin-top: 25px;
+}
+
+#email {
     margin-bottom: 25px;
 }
 
